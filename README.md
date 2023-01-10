@@ -11,7 +11,7 @@
 ### POST /auth/login
 
 Esto sirve para iniciar sesión.
-En el `Body` de la aplicación que se use para probar la API tienen que estar escritos los siguientes atributos.
+En el `Body` de la aplicación que se use para probar la API tienen que estar escrito el siguiente texto.
 
 ~~~
 {
@@ -20,6 +20,7 @@ En el `Body` de la aplicación que se use para probar la API tienen que estar es
 }
 ~~~
 
+En ambos "string" hay que escribir la dirección de correo electrónico con su respectiva contraseña.
 A partir de esto, se nos dará un token el cual se tendrá que pegar en `Authorization` y de las múltiples opciones elegir `Bearer Token`.
 De esta forma, no será posible pegarle a la API sin tener el token en uso.
 
@@ -27,9 +28,7 @@ De esta forma, no será posible pegarle a la API sin tener el token en uso.
 
 Esto nos traerá un cliente con todos sus atributos utilizando su ID como parámetro.
 
-En `:id` tendremos que escribir el ID del cliente.
-
-En el `Body` tendremos que escribir lo siguiente:
+En `:id` se deberá escribir el ID del cliente. Mientras que en el `Body` hay que escribir lo siguiente:
 
 ~~~
 {
@@ -49,7 +48,7 @@ nos devolverá un error.
 Al igual que el anterior, nos traerá un cliente con todos sus atributos, con la diferencia de que, en este caso, hay que utilizar el nombre como parámetro. También hay
 que escribir exactamente lo mismo que en el `Body` del anterior endpoint.
 
-En `:name` tendremos que escribir el nombre del cliente.
+En `:name` hay que escribir el nombre del cliente.
 
 #### Ejemplo -> /client/name/Britney
 
@@ -67,6 +66,6 @@ La única forma de acceder es escribiendo esto en el `Body`
 }
 ~~~
 
-En `:name` tendremos que escribir el nombre del cliente.
+En `:name` hay que escribir el nombre del cliente.
 
 #### Ejemplo -> /policy/Ines
