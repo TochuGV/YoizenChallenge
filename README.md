@@ -11,7 +11,7 @@
 ### POST /auth/login
 
 Esto sirve para iniciar sesión.
-En el `Body` de la aplicación que se use para probar la API tienen que estar escrito el siguiente texto.
+En el `Body` de la aplicación que se use para probar la API tiene que estar escrito el siguiente texto.
 
 ~~~
 {
@@ -21,7 +21,7 @@ En el `Body` de la aplicación que se use para probar la API tienen que estar es
 ~~~
 
 En ambos "string" hay que escribir la dirección de correo electrónico con su respectiva contraseña.
-A partir de esto, se nos dará un token el cual se tendrá que pegar en `Authorization` y de las múltiples opciones elegir `Bearer Token`.
+A partir de esto, en la respuesta de la aplicación, va a aparecer un token el cual se tendrá que pegar en `Authorization` y de las múltiples opciones elegir `Bearer Token`.
 De esta forma, no será posible pegarle a la API sin tener el token en uso.
 
 ### GET /client/id/:id
@@ -38,8 +38,8 @@ En `:id` se deberá escribir el ID del cliente. Mientras que en el `Body` hay qu
 }
 ~~~
 
-Para estar autorizado a acceder a la información que nos traiga el endpoint, tendremos que poner que el cliente tiene el rol usuario o administrador. De lo contrario,
-nos devolverá un error.
+Para estar autorizado a acceder a la información que nos traiga el endpoint, hay que poner que el cliente tiene el rol usuario o administrador. De lo contrario,
+va a devolver un error.
 
 #### Ejemplo -> /client/id/a0ece5db-cd14-4f21-812f-966633e7be86
 
